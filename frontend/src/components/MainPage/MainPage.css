@@ -1,0 +1,264 @@
+.page-container {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.date-filter {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.date-filter h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.date-field label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.date-field input[type="date"] {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.date-inputs button {
+  padding: 0.5rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.date-inputs button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.date-inputs button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.loading, .no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+}
+
+.main-page {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.news-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-hotness {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hotness-high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.hotness-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.hotness-low {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.news-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.news-headline {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.news-why {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.entities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.entity-tag {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.source-line {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.source-line a {
+  color: #2563eb;
+  margin-left: 0.25rem;
+  text-decoration: none;
+}
+
+.source-line a:hover {
+  text-decoration: underline;
+}
+
+.card-footer {
+  margin-top: 1rem;
+}
+
+.details-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.details-btn:hover {
+  background: #1d4ed8;
+}
+
+.details-btn.red {
+  background: #dc2626;
+  margin-top: 1rem;
+}
+
+.details-btn.red:hover {
+  background: #b91c1c;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.overlay-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 700px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.draft-title {
+  margin: 0 0 1rem 0;
+  color: #111827;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.draft-lead {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+.overlay-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  color: #374151;
+}
+
+.overlay-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .overlay-content {
+    padding: 1.5rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  .main-page {
+    grid-template-columns: 1fr;
+  }
+}
