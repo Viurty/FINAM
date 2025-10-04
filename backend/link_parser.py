@@ -22,14 +22,6 @@ rss_links = [
     'http://rss.cnn.com/rss/edition.rss',
 ]
 
-GOOGLE_ENDPOINT = "https://www.googleapis.com/customsearch/v1"
-
-API = [
-    'AIzaSyCu0zQAoiVWaVUxDDQ1W9WTs2yBMu8PDhM',
-    'AIzaSyBIfQpI8PFHjpl5hFVydNaq0DClshksfrk',
-    'AIzaSyAJOtiZtTvJi8_ruvjbq_tetyHONjg1Qgo'
-       ]
-cx = "213732602856a47d0"
 
 
 def get_links(count=20, rss=None):
